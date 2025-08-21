@@ -1,0 +1,124 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Globe } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+
+export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [language, setLanguage] = useState("FR");
+  const location = useLocation();
+
+  const navigation = [
+    { name: "Accueil", href: "/" },
+    { name: "À propos", href: "/about" },
+    { name: "Domaines", href: "/domains" },
+    { name: "Projets", href: "/projects" },
+    { name: "Actualités", href: "/news" },
+    { name: "Galerie", href: "/gallery" },
+    { name: "Publications", href: "/publications" },
+    { name: "Contact", href: "/contact" }
+  ];
+
+  const toggleLanguage = () => {
+    setLanguage(language === "FR" ? "EN" : "FR");
+  };
+
+  return (
+    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border z-50">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-3 hover-lift">
+            <img 
+              src="/lovable-uploads/21771e6a-d9f1-45e9-82cc-4fb8ed10c065.png" 
+              alt="FELD ASBL Logo" 
+              className="h-12 w-auto"
+            />
+            <div className="hidden sm:block">
+              <h1 className="text-xl font-bold text-foreground">FELD ASBL</h1>
+              <p className="text-xs text-muted-foreground">Femmes Engagées pour le Leadership</p>
+            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-1">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  location.pathname === item.href
+                    ? "bg-primary text-primary-foreground"
+                    : "text-foreground hover:bg-accent hover:text-accent-foreground"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Language Toggle & Mobile Menu */}
+          <div className="flex items-center space-x-4">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={toggleLanguage}
+              className="hidden md:flex items-center space-x-1"
+            >
+              <Globe className="h-4 w-4" />
+              <span>{language}</span>
+            </Button>
+
+            <Button
+              variant="outline"
+              className="gradient-gold text-white border-0 hover:opacity-90"
+            >
+              Adhérer
+            </Button>
+
+            {/* Mobile menu button */}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="lg:hidden"
+            >
+              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </Button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="lg:hidden border-t border-border">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                    location.pathname === item.href
+                      ? "bg-primary text-primary-foreground"
+                      : "text-foreground hover:bg-accent hover:text-accent-foreground"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={toggleLanguage}
+                className="ml-3 mt-2 flex items-center space-x-1"
+              >
+                <Globe className="h-4 w-4" />
+                <span>{language}</span>
+              </Button>
+            </div>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
