@@ -11,11 +11,9 @@ export const Header = () => {
   const navigation = [
     { name: "Accueil", href: "/" },
     { name: "À propos", href: "/about" },
-    { name: "Domaines", href: "/domains" },
     { name: "Projets", href: "/projects" },
-    { name: "Actualités", href: "/news" },
+    { name: "Blog", href: "/blog" },
     { name: "Galerie", href: "/gallery" },
-    { name: "Publications", href: "/publications" },
     { name: "Contact", href: "/contact" }
   ];
 
@@ -36,7 +34,6 @@ export const Header = () => {
             />
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-foreground">FELD ASBL</h1>
-              <p className="text-xs text-muted-foreground">Femmes Engagées pour le Leadership</p>
             </div>
           </Link>
 
@@ -57,23 +54,13 @@ export const Header = () => {
             ))}
           </nav>
 
-          {/* Language Toggle & Mobile Menu */}
+          {/* Mobile Menu */}
           <div className="flex items-center space-x-4">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={toggleLanguage}
-              className="hidden md:flex items-center space-x-1"
-            >
-              <Globe className="h-4 w-4" />
-              <span>{language}</span>
-            </Button>
-
             <Button
               variant="outline"
               className="gradient-gold text-white border-0 hover:opacity-90"
             >
-              Adhérer
+              Faire un don
             </Button>
 
             {/* Mobile menu button */}
@@ -106,15 +93,6 @@ export const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={toggleLanguage}
-                className="ml-3 mt-2 flex items-center space-x-1"
-              >
-                <Globe className="h-4 w-4" />
-                <span>{language}</span>
-              </Button>
             </div>
           </div>
         )}
