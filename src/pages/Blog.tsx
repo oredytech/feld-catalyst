@@ -2,6 +2,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, User, MessageCircle, Share2, Eye } from "lucide-react";
+import { Link } from "react-router-dom";
+import leadershipImage from "@/assets/blog-leadership-feminin.jpg";
+import formationImage from "@/assets/blog-formation-leadership.jpg";
+import agricultureImage from "@/assets/blog-agriculture-durable.jpg";
+import journeeFemmeImage from "@/assets/blog-journee-femme.jpg";
+import partenariatImage from "@/assets/blog-partenariat-unicef.jpg";
+import microcreditImage from "@/assets/blog-microcredit.jpg";
 
 export default function Blog() {
   const blogPosts = [
@@ -13,7 +20,7 @@ export default function Blog() {
       author: "Marie Mukendi",
       date: "2024-01-15",
       category: "Développement",
-      image: "/placeholder.svg",
+      image: leadershipImage,
       readTime: "5 min",
       views: 1250,
       comments: 23,
@@ -27,7 +34,7 @@ export default function Blog() {
       author: "Josephine Mbuyi",
       date: "2024-01-13",
       category: "Actualités",
-      image: "/placeholder.svg",
+      image: formationImage,
       readTime: "3 min",
       views: 890,
       comments: 15,
@@ -41,7 +48,7 @@ export default function Blog() {
       author: "Dr. Sarah Kabongo",
       date: "2024-01-10",
       category: "Agriculture",
-      image: "/placeholder.svg",
+      image: agricultureImage,
       readTime: "7 min",
       views: 756,
       comments: 18,
@@ -55,7 +62,7 @@ export default function Blog() {
       author: "Grace Mulumba",
       date: "2024-01-08",
       category: "Événements",
-      image: "/placeholder.svg",
+      image: journeeFemmeImage,
       readTime: "4 min",
       views: 1120,
       comments: 31,
@@ -69,7 +76,7 @@ export default function Blog() {
       author: "Directrice Exécutive",
       date: "2024-01-05",
       category: "Partenariats",
-      image: "/placeholder.svg",
+      image: partenariatImage,
       readTime: "6 min",
       views: 1450,
       comments: 27,
@@ -83,7 +90,7 @@ export default function Blog() {
       author: "Économiste FELD",
       date: "2024-01-03",
       category: "Économie",
-      image: "/placeholder.svg",
+      image: microcreditImage,
       readTime: "8 min",
       views: 923,
       comments: 12,
@@ -170,9 +177,11 @@ export default function Blog() {
                 </div>
                 <span>{blogPosts[0].readTime} de lecture</span>
               </div>
-              <Button size="lg" className="w-full md:w-auto">
-                Lire l'article complet
-              </Button>
+              <Link to={`/blog/${blogPosts[0].id}`}>
+                <Button size="lg" className="w-full md:w-auto">
+                  Lire l'article complet
+                </Button>
+              </Link>
             </div>
           </div>
         </Card>
@@ -236,9 +245,11 @@ export default function Blog() {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <Button variant="outline" size="sm">
-                    Lire plus
-                  </Button>
+                  <Link to={`/blog/${post.id}`}>
+                    <Button variant="outline" size="sm">
+                      Lire plus
+                    </Button>
+                  </Link>
                   <Button variant="ghost" size="sm">
                     <Share2 className="h-4 w-4" />
                   </Button>
