@@ -185,8 +185,8 @@ Notre approche intègre formation en gestion d'entreprise, accompagnement person
 
   return (
     <div className="min-h-screen bg-background pt-24 pb-16">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row gap-8">
+      <div className="container mx-auto px-4 max-w-7xl">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
           {/* Main Content */}
           <div className="lg:w-2/3">
             {/* Back Button */}
@@ -231,7 +231,7 @@ Notre approche intègre formation en gestion d'entreprise, accompagnement person
               <img 
                 src={currentPost.image} 
                 alt={currentPost.title}
-                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+                className="w-full h-64 md:h-96 object-cover rounded-xl shadow-lg"
               />
             </div>
 
@@ -303,7 +303,7 @@ Notre approche intègre formation en gestion d'entreprise, accompagnement person
                           <img 
                             src={post.image} 
                             alt={post.title}
-                            className="w-16 h-16 object-cover rounded"
+                            className="w-16 h-16 object-cover rounded-xl"
                           />
                           <div className="flex-1">
                             <h4 className="text-sm font-medium group-hover:text-primary line-clamp-2 text-foreground">

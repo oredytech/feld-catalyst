@@ -76,7 +76,7 @@ export default function About() {
               <img 
                 src="/lovable-uploads/21771e6a-d9f1-45e9-82cc-4fb8ed10c065.png" 
                 alt="FELD ASBL Logo" 
-                className="w-full max-w-md mx-auto hover-lift"
+                className="w-full max-w-md mx-auto hover-lift rounded-xl"
               />
             </div>
             <div className="animate-slide-in-right">
@@ -148,7 +148,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-foreground">Nos Valeurs</h2>

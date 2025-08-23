@@ -73,9 +73,9 @@ export default function Contact() {
       </section>
 
       {/* Contact Form & Map */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
+      <section className="py-20 bg-muted/50">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Form */}
             <div className="animate-fade-in">
               <Card className="border-0 shadow-lg">
@@ -131,7 +131,7 @@ export default function Contact() {
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-4 text-foreground">Notre Localisation</h3>
-                  <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center mb-4">
+                  <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center mb-4">
                     <div className="text-center">
                       <MapPin className="h-12 w-12 mx-auto mb-2 text-primary" />
                       <p className="text-muted-foreground">Carte interactive</p>
