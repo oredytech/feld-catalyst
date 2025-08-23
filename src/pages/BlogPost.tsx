@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Calendar, User, Eye, MessageCircle, Share2, Facebook, Instagram, Phone } from "lucide-react";
+import { getSlugFromTitle } from "@/lib/articleSlug";
 import leadershipImage from "@/assets/blog-leadership-feminin.jpg";
 import formationImage from "@/assets/blog-formation-leadership.jpg";
 import agricultureImage from "@/assets/blog-agriculture-durable.jpg";
@@ -11,7 +12,7 @@ import partenariatImage from "@/assets/blog-partenariat-unicef.jpg";
 import microcreditImage from "@/assets/blog-microcredit.jpg";
 
 export default function BlogPost() {
-  const { id } = useParams();
+  const { slug } = useParams();
 
   const blogPosts = [
     {
@@ -150,8 +151,8 @@ Notre approche intègre formation en gestion d'entreprise, accompagnement person
     }
   ];
 
-  const relatedPosts = blogPosts.filter(post => post.id !== parseInt(id || "1")).slice(0, 3);
-  const currentPost = blogPosts.find(post => post.id === parseInt(id || "1")) || blogPosts[0];
+  const currentPost = blogPosts.find(post => getSlugFromTitle(post.title) === slug) || blogPosts[0];
+  const relatedPosts = blogPosts.filter(post => post.id !== currentPost.id).slice(0, 3);
 
   const getCategoryColor = (category: string) => {
     const colors = {
@@ -293,11 +294,11 @@ Notre approche intègre formation en gestion d'entreprise, accompagnement person
                   <h3 className="text-lg font-semibold mb-4 text-foreground">Articles similaires</h3>
                   <div className="space-y-4">
                     {relatedPosts.map((post) => (
-                      <Link 
-                        key={post.id} 
-                        to={`/blog/${post.id}`}
-                        className="block group"
-                      >
+                       <Link 
+                         key={post.id} 
+                         to={`/blog/${getSlugFromTitle(post.title)}`}
+                         className="block group"
+                       >
                         <div className="flex space-x-3">
                           <img 
                             src={post.image} 

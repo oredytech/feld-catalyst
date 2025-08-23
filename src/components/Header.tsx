@@ -22,7 +22,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border z-50">
+    <header className="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -78,7 +78,7 @@ export const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden border-t border-border">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-background">
               {navigation.map((item) => (
                 <Link
                   key={item.name}

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, User, MessageCircle, Share2, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
+import { getSlugFromTitle } from "@/lib/articleSlug";
 import leadershipImage from "@/assets/blog-leadership-feminin.jpg";
 import formationImage from "@/assets/blog-formation-leadership.jpg";
 import agricultureImage from "@/assets/blog-agriculture-durable.jpg";
@@ -177,7 +178,7 @@ export default function Blog() {
                 </div>
                 <span>{blogPosts[0].readTime} de lecture</span>
               </div>
-              <Link to={`/blog/${blogPosts[0].id}`}>
+              <Link to={`/blog/${getSlugFromTitle(blogPosts[0].title)}`}>
                 <Button size="lg" className="w-full md:w-auto">
                   Lire l'article complet
                 </Button>
@@ -245,7 +246,7 @@ export default function Blog() {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <Link to={`/blog/${post.id}`}>
+                  <Link to={`/blog/${getSlugFromTitle(post.title)}`}>
                     <Button variant="outline" size="sm">
                       Lire plus
                     </Button>
