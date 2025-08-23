@@ -41,8 +41,15 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 animate-pulse" />
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="/src/assets/hero-background.jpg" 
+            alt="Femme africaine au champs" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-secondary/30 to-accent/40" />
+        </div>
         
         <div className="container mx-auto px-4 text-center z-10">
           <div className="animate-fade-in">

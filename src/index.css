@@ -7,36 +7,36 @@ All colors MUST be HSL.
 */
 
 @layer base {
-  :root {
-    /* Mode sombre par défaut */
-    --background: 210 15% 20%;
-    --foreground: 210 20% 95%;
+:root {
+    /* Mode sombre par défaut avec couleurs agricoles */
+    --background: 75 45% 15%;
+    --foreground: 60 30% 90%;
 
-    --card: 210 20% 25%;
-    --card-foreground: 210 20% 85%;
+    --card: 75 45% 15%;
+    --card-foreground: 60 30% 90%;
 
-    --popover: 210 20% 25%;
-    --popover-foreground: 210 20% 85%;
+    --popover: 75 45% 15%;
+    --popover-foreground: 60 30% 90%;
 
-    /* FELD Brand Colors - Darker versions */
-    --primary: 45 85% 45%; /* Darker Gold/Yellow - Leadership, Hope */
-    --primary-foreground: 210 15% 20%;
+    /* FELD Brand Colors - Couleurs agricoles */
+    --primary: 87 85% 35%; /* Vert agricole - Leadership, Espoir */
+    --primary-foreground: 75 45% 15%;
 
-    --secondary: 120 50% 35%; /* Darker Green - Development, Sustainability */
-    --secondary-foreground: 210 20% 85%;
+    --secondary: 120 50% 35%; /* Vert développement - Durabilité */
+    --secondary-foreground: 60 30% 90%;
 
-    --accent: 215 80% 45%; /* Darker Blue - Peace, Trust */
-    --accent-foreground: 210 20% 85%;
+    --accent: 35 70% 45%; /* Brun terre - Paix, Confiance */
+    --accent-foreground: 60 30% 90%;
 
-    --muted: 210 20% 30%;
-    --muted-foreground: 210 15% 75%;
+    --muted: 70 25% 25%;
+    --muted-foreground: 60 15% 65%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 210 20% 85%;
+    --destructive-foreground: 60 30% 90%;
 
-    --border: 210 20% 35%;
-    --input: 210 20% 30%;
-    --ring: 45 85% 45%;
+    --border: 70 25% 25%;
+    --input: 70 25% 25%;
+    --ring: 87 85% 35%;
 
     --radius: 0.5rem;
 
@@ -68,17 +68,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* FELD Brand Colors - Mode clair */
-    --primary: 45 85% 45%; /* Gold/Yellow */
+    /* FELD Brand Colors - Mode clair avec couleurs agricoles */
+    --primary: 87 85% 35%; /* Vert agricole */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 120 50% 35%; /* Green */
+    --secondary: 120 50% 35%; /* Vert développement */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 215 80% 45%; /* Blue */
+    --accent: 35 70% 45%; /* Brun terre */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;

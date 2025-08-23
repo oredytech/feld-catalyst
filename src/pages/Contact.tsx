@@ -16,13 +16,13 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Téléphone",
-      details: "+243 859 995 800",
+      details: "+243 995 021 267\n+243 997 713 286\n+243 999 147 627",
       color: "text-secondary"
     },
     {
       icon: Mail,
       title: "Email",
-      details: "contact@feld-rdc.org",
+      details: "feldrdc1@gmail.com",
       color: "text-accent"
     },
     {
