@@ -56,12 +56,14 @@ export const Header = () => {
 
           {/* Mobile Menu */}
           <div className="flex items-center space-x-4">
-            <Button
-              variant="outline"
-              className="gradient-gold text-white border-0 hover:opacity-90"
-            >
-              Faire un don
-            </Button>
+            <Link to="/donate">
+              <Button
+                variant="outline"
+                className="gradient-gold text-white border-0 hover:opacity-90"
+              >
+                Faire un don
+              </Button>
+            </Link>
 
             {/* Mobile menu button */}
             <Button

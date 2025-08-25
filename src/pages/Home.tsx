@@ -64,13 +64,17 @@ export default function Home() {
               la paix, la solidarité et le développement durable en République Démocratique du Congo
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="gradient-gold text-white border-0 hover:opacity-90 hover-lift">
-                Rejoindre notre mission
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="hover-lift">
-                Découvrir nos projets
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="gradient-gold text-white border-0 hover:opacity-90 hover-lift">
+                  Rejoindre notre mission
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to="/projects">
+                <Button variant="outline" size="lg" className="hover-lift">
+                  Découvrir nos projets
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -160,12 +164,12 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Button variant="outline" size="lg" className="hover-lift">
-              <Link to="/domains" className="flex items-center">
+            <Link to="/projects">
+              <Button variant="outline" size="lg" className="hover-lift">
                 Voir tous nos domaines
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -195,12 +199,12 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Button className="gradient-blue text-white border-0 hover-lift">
-              <Link to="/news" className="flex items-center">
+            <Link to="/blog">
+              <Button className="gradient-blue text-white border-0 hover-lift">
                 Toutes les actualités
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -214,12 +218,16 @@ export default function Home() {
             et contribuer au développement de la République Démocratique du Congo
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" variant="outline" className="bg-white text-primary border-white hover:bg-white/90">
-              Devenir membre
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <Link to="/contact">Nous contacter</Link>
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" variant="outline" className="bg-white text-primary border-white hover:bg-white/90">
+                Devenir membre
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                Nous contacter
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

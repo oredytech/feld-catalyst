@@ -8,35 +8,37 @@ All colors MUST be HSL.
 
 @layer base {
 :root {
-    /* Mode sombre par défaut avec couleurs agricoles atténuées */
-    --background: 75 35% 20%;
-    --foreground: 60 30% 90%;
+    /* Mode clair par défaut avec couleurs agricoles */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
 
-    --card: 75 35% 20%;
-    --card-foreground: 60 30% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
 
-    --popover: 75 35% 20%;
-    --popover-foreground: 60 30% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
 
-    /* FELD Brand Colors - Couleurs agricoles atténuées */
-    --primary: 87 70% 45%; /* Vert agricole plus clair - Leadership, Espoir */
-    --primary-foreground: 75 35% 20%;
+    /* FELD Brand Colors - Mode clair */
+    --primary: 87 70% 35%; /* Vert agricole - Leadership, Espoir */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 120 45% 45%; /* Vert développement plus clair - Durabilité */
-    --secondary-foreground: 60 30% 90%;
+    --secondary: 120 45% 40%; /* Vert développement - Durabilité */
+    --secondary-foreground: 0 0% 98%;
 
-    --accent: 35 60% 55%; /* Brun terre plus clair - Paix, Confiance */
-    --accent-foreground: 60 30% 90%;
+    --accent: 35 60% 50%; /* Brun terre - Paix, Confiance */
+    --accent-foreground: 0 0% 98%;
 
-    --muted: 70 20% 30%;
-    --muted-foreground: 60 15% 70%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 60 30% 90%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 70 25% 25%;
-    --input: 70 25% 25%;
-    --ring: 87 85% 35%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 87 70% 35%;
+
+    --radius: 0.5rem;
 
     --radius: 0.5rem;
 
@@ -57,36 +59,37 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .light {
-    /* Mode clair - texte sombre sur fond blanc */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+  .dark {
+    /* Mode sombre avec couleurs agricoles atténuées */
+    --background: 75 35% 20%;
+    --foreground: 60 30% 90%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 75 35% 20%;
+    --card-foreground: 60 30% 90%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 75 35% 20%;
+    --popover-foreground: 60 30% 90%;
 
-    /* FELD Brand Colors - Mode clair avec couleurs agricoles */
-    --primary: 87 85% 35%; /* Vert agricole */
-    --primary-foreground: 0 0% 100%;
+    /* FELD Brand Colors - Mode sombre */
+    --primary: 87 70% 45%; /* Vert agricole plus clair */
+    --primary-foreground: 75 35% 20%;
 
-    --secondary: 120 50% 35%; /* Vert développement */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 120 45% 45%; /* Vert développement plus clair */
+    --secondary-foreground: 60 30% 90%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 35 60% 55%; /* Brun terre plus clair */
+    --accent-foreground: 60 30% 90%;
 
-    --accent: 35 70% 45%; /* Brun terre */
-    --accent-foreground: 0 0% 100%;
+    --muted: 70 20% 30%;
+    --muted-foreground: 60 15% 70%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 60 30% 90%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 45 85% 45%;
+    --border: 70 25% 25%;
+    --input: 70 25% 25%;
+    --ring: 87 70% 45%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
