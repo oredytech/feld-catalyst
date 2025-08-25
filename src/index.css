@@ -8,28 +8,28 @@ All colors MUST be HSL.
 
 @layer base {
 :root {
-    /* Mode sombre par défaut avec couleurs agricoles */
-    --background: 75 45% 15%;
+    /* Mode sombre par défaut avec couleurs agricoles atténuées */
+    --background: 75 35% 20%;
     --foreground: 60 30% 90%;
 
-    --card: 75 45% 15%;
+    --card: 75 35% 20%;
     --card-foreground: 60 30% 90%;
 
-    --popover: 75 45% 15%;
+    --popover: 75 35% 20%;
     --popover-foreground: 60 30% 90%;
 
-    /* FELD Brand Colors - Couleurs agricoles */
-    --primary: 87 85% 35%; /* Vert agricole - Leadership, Espoir */
-    --primary-foreground: 75 45% 15%;
+    /* FELD Brand Colors - Couleurs agricoles atténuées */
+    --primary: 87 70% 45%; /* Vert agricole plus clair - Leadership, Espoir */
+    --primary-foreground: 75 35% 20%;
 
-    --secondary: 120 50% 35%; /* Vert développement - Durabilité */
+    --secondary: 120 45% 45%; /* Vert développement plus clair - Durabilité */
     --secondary-foreground: 60 30% 90%;
 
-    --accent: 35 70% 45%; /* Brun terre - Paix, Confiance */
+    --accent: 35 60% 55%; /* Brun terre plus clair - Paix, Confiance */
     --accent-foreground: 60 30% 90%;
 
-    --muted: 70 25% 25%;
-    --muted-foreground: 60 15% 65%;
+    --muted: 70 20% 30%;
+    --muted-foreground: 60 15% 70%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 60 30% 90%;

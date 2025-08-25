@@ -44,8 +44,8 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/src/assets/hero-background.jpg" 
-            alt="Femme africaine au champs" 
+            src="/src/assets/hero-group-women-farming.jpg" 
+            alt="Groupe de femmes africaines cultivant aux champs" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-secondary/30 to-accent/40" />

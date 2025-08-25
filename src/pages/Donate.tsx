@@ -92,10 +92,10 @@ export default function Donate() {
                 <CardContent className="space-y-6">
                   <div className="grid grid-cols-3 gap-3">
                     {donationAmounts.map((amount) => (
-                      <Button
+                     <Button
                         key={amount}
                         variant="outline"
-                        className="h-16 text-lg hover-lift rounded-xl"
+                        className="h-16 text-lg hover-lift rounded-xl border-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                       >
                         ${amount}
                       </Button>
@@ -208,8 +208,8 @@ export default function Donate() {
                       <CreditCard className="h-5 w-5 mr-2 text-primary" />
                       Dons internationaux
                     </h3>
-                    <Button className="w-full bg-primary text-primary-foreground border-0 hover:opacity-90 h-12 rounded-xl">
-                      Donner par carte bancaire
+                    <Button className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground border-0 hover:shadow-lg hover:scale-105 transition-all duration-300 h-12 rounded-xl">
+                      💳 Donner par carte bancaire
                     </Button>
                     <p className="text-xs text-muted-foreground text-center">
                       Paiement sécurisé avec Stripe
