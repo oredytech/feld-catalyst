@@ -11,103 +11,103 @@ export default function Gallery() {
   const galleryItems = [
     {
       id: 1,
-      title: "Formation en Leadership - Kinshasa 2024",
-      description: "Cérémonie de remise de diplômes pour 50 femmes leaders",
+      title: "Formation Entrepreneuriat Féminin",
+      description: "Femmes bénéficiaires montrant leurs produits artisanaux et sacs tissés",
       type: "image",
       category: "Formations",
-      date: "2024-01-13",
+      date: "2024-03-15",
       location: "Kinshasa, RDC",
-      participants: 50,
-      image: "/placeholder.svg",
-      images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg"]
+      participants: 25,
+      image: "/lovable-uploads/d5049915-f592-46ff-be3b-b7b6c9b1fe9b.png",
+      images: ["/lovable-uploads/d5049915-f592-46ff-be3b-b7b6c9b1fe9b.png", "/lovable-uploads/721e3c21-e374-44f2-8a38-1a44f3eeafc2.png"]
     },
     {
       id: 2,
-      title: "Projet Agriculture Durable - Bandundu",
-      description: "Visite de terrain dans les jardins communautaires",
-      type: "video",
-      category: "Projets",
-      date: "2024-01-10",
-      location: "Bandundu, RDC",
-      participants: 30,
-      image: "/placeholder.svg",
-      duration: "5:30"
+      title: "Équipe FELD ASBL",
+      description: "Photo de groupe devant le siège de FELD avec toute l'équipe",
+      type: "image",
+      category: "Événements",
+      date: "2024-02-20",
+      location: "Kinshasa, RDC",
+      participants: 45,
+      image: "/lovable-uploads/457ff5e8-34c7-40b5-b959-c74e910c87d5.png",
+      images: ["/lovable-uploads/457ff5e8-34c7-40b5-b959-c74e910c87d5.png"]
     },
     {
       id: 3,
-      title: "Journée Internationale de la Femme 2024",
-      description: "Célébration et sensibilisation à l'égalité des genres",
+      title: "Célébration Nationale",
+      description: "Célébration avec le drapeau congolais lors d'un événement spécial",
       type: "image",
       category: "Événements",
-      date: "2024-03-08",
+      date: "2024-06-30",
       location: "Kinshasa, RDC",
-      participants: 200,
-      image: "/placeholder.svg",
-      images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg"]
+      participants: 60,
+      image: "/lovable-uploads/0db6bbdb-0393-4f30-99ab-65955302de95.png",
+      images: ["/lovable-uploads/0db6bbdb-0393-4f30-99ab-65955302de95.png"]
     },
     {
       id: 4,
-      title: "Atelier Entrepreneuriat Féminin",
-      description: "Formation sur la création et gestion d'entreprise",
+      title: "Distribution d'Aide Humanitaire",
+      description: "Distribution de vivres et matériel aux familles dans le besoin",
       type: "image",
-      category: "Formations",
-      date: "2024-01-05",
-      location: "Goma, Nord-Kivu",
-      participants: 40,
-      image: "/placeholder.svg",
-      images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"]
+      category: "Projets",
+      date: "2024-01-25",
+      location: "Province rurale, RDC",
+      participants: 200,
+      image: "/lovable-uploads/dfa1bba4-c8fe-496a-bce2-eea1defdf7ed.png",
+      images: ["/lovable-uploads/dfa1bba4-c8fe-496a-bce2-eea1defdf7ed.png"]
     },
     {
       id: 5,
-      title: "Documentaire : Femmes Rurales et Développement",
-      description: "Témoignages de femmes bénéficiaires de nos programmes",
-      type: "video",
-      category: "Documentaires",
-      date: "2023-12-15",
-      location: "Provinces rurales, RDC",
-      participants: 15,
-      image: "/placeholder.svg",
-      duration: "12:45"
+      title: "Assemblée de Femmes Leaders",
+      description: "Grande assemblée de femmes lors d'une conférence de leadership",
+      type: "image",
+      category: "Formations",
+      date: "2024-03-08",
+      location: "Kinshasa, RDC",
+      participants: 120,
+      image: "/lovable-uploads/855507ec-ce73-4654-9d35-20a2767ccd04.png",
+      images: ["/lovable-uploads/855507ec-ce73-4654-9d35-20a2767ccd04.png"]
     },
     {
       id: 6,
-      title: "Partenariat UNICEF - Signature d'accord",
-      description: "Signature du partenariat pour l'éducation des jeunes filles",
+      title: "Agriculture du Cacao",
+      description: "Femmes agricultrices dans les plantations de cacao - formation agriculture durable",
       type: "image",
-      category: "Partenariats",
-      date: "2024-01-05",
-      location: "Kinshasa, RDC",
-      participants: 10,
-      image: "/placeholder.svg",
-      images: ["/placeholder.svg", "/placeholder.svg"]
+      category: "Projets",
+      date: "2024-04-10",
+      location: "Bandundu, RDC",
+      participants: 15,
+      image: "/lovable-uploads/2e2aad75-7c66-4822-af7e-450285fd3fa5.png",
+      images: ["/lovable-uploads/2e2aad75-7c66-4822-af7e-450285fd3fa5.png", "/lovable-uploads/b898c6c8-fe68-4d9f-b434-3ac5407f448d.png"]
     },
     {
       id: 7,
-      title: "Micro-crédit : Histoires de Réussite",
-      description: "Portraits de femmes entrepreneures soutenues par FELD",
-      type: "video",
-      category: "Témoignages",
-      date: "2023-11-20",
-      location: "Diverses provinces, RDC",
-      participants: 8,
-      image: "/placeholder.svg",
-      duration: "8:15"
+      title: "Formation Technique",
+      description: "Atelier de formation technique avec machines à coudre",
+      type: "image",
+      category: "Formations",
+      date: "2024-02-05",
+      location: "Goma, Nord-Kivu",
+      participants: 20,
+      image: "/lovable-uploads/d4c294bd-9977-4b72-a629-907d39e9b12b.png",
+      images: ["/lovable-uploads/d4c294bd-9977-4b72-a629-907d39e9b12b.png"]
     },
     {
       id: 8,
-      title: "Conférence Annuelle FELD 2023",
-      description: "Bilan des activités et perspectives d'avenir",
+      title: "Rassemblement Communautaire",
+      description: "Grande mobilisation communautaire pour un projet de développement",
       type: "image",
-      category: "Événements",
-      date: "2023-12-10",
-      location: "Kinshasa, RDC",
-      participants: 150,
-      image: "/placeholder.svg",
-      images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg"]
+      category: "Projets",
+      date: "2024-05-15",
+      location: "Lubumbashi, RDC",
+      participants: 300,
+      image: "/lovable-uploads/7c146006-a09b-4dad-9b55-ac988cea132f.png",
+      images: ["/lovable-uploads/7c146006-a09b-4dad-9b55-ac988cea132f.png"]
     }
   ];
 
-  const categories = ["Tous", "Formations", "Projets", "Événements", "Documentaires", "Partenariats", "Témoignages"];
+  const categories = ["Tous", "Formations", "Projets", "Événements"];
 
   const filteredItems = selectedCategory === "Tous" 
     ? galleryItems 
@@ -162,42 +162,13 @@ export default function Gallery() {
                 <img 
                   src={item.image} 
                   alt={item.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 rounded-xl"
                 />
                 
                 {/* Type Badge */}
                 <Badge className={`absolute top-4 left-4 ${getCategoryColor(item.category)} text-white border-0`}>
                   {item.category}
                 </Badge>
-
-                {/* Video Play Button */}
-                {item.type === "video" && (
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/30 transition-colors">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Button size="lg" className="rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30">
-                          <Play className="h-6 w-6 text-white" />
-                        </Button>
-                      </DialogTrigger>
-                      <DialogContent className="max-w-4xl">
-                        <div className="aspect-video bg-black rounded-lg flex items-center justify-center">
-                          <div className="text-white text-center">
-                            <Play className="h-16 w-16 mx-auto mb-4 opacity-50" />
-                            <p>Lecteur vidéo - {item.duration}</p>
-                            <p className="text-sm opacity-75 mt-2">{item.title}</p>
-                          </div>
-                        </div>
-                      </DialogContent>
-                    </Dialog>
-                  </div>
-                )}
-
-                {/* Duration for videos */}
-                {item.type === "video" && (
-                  <Badge className="absolute bottom-4 right-4 bg-black/70 text-white border-0">
-                    {item.duration}
-                  </Badge>
-                )}
 
                 {/* Image count for albums */}
                 {item.type === "image" && item.images && (
@@ -231,31 +202,25 @@ export default function Gallery() {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  {item.type === "image" ? (
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Button variant="outline" size="sm">
-                          Voir l'album
-                        </Button>
-                      </DialogTrigger>
-                      <DialogContent className="max-w-4xl">
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                          {item.images?.map((img, idx) => (
-                            <img 
-                              key={idx}
-                              src={img} 
-                              alt={`${item.title} - ${idx + 1}`}
-                              className="w-full h-32 object-cover rounded-lg"
-                            />
-                          ))}
-                        </div>
-                      </DialogContent>
-                    </Dialog>
-                  ) : (
-                    <Button variant="outline" size="sm">
-                      Regarder la vidéo
-                    </Button>
-                  )}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="outline" size="sm">
+                        Voir l'album
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-4xl">
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        {item.images?.map((img, idx) => (
+                          <img 
+                            key={idx}
+                            src={img} 
+                            alt={`${item.title} - ${idx + 1}`}
+                            className="w-full h-32 object-cover rounded-lg"
+                          />
+                        ))}
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                   
                   <div className="flex items-center space-x-2">
                     <Button variant="ghost" size="sm">
